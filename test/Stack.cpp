@@ -14,7 +14,7 @@ TEST(StackTest, Resize) {
     Stack* s = new Stack();
     for (int i = 0; i <= 24; i++) {
         s->push(i);
-    {
+    }
     EXPECT_EQ(24, s->peek());
     delete s;
 }
