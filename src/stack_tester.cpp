@@ -13,6 +13,14 @@ int main() {
   cout << stack->pop() << endl;
   cout << stack->pop() << endl;
   cout << stack->pop() << endl;
+  
+  for (int i = 0; i <= 24; i++) {
+    stack->push(i);
+  }
+
+  cout << stack->pop() << endl;
+  cout << stack->pop() << endl;
+  cout << stack->pop() << endl;
 
   delete stack;
 
