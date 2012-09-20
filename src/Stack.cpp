@@ -21,11 +21,11 @@ void Stack::push(int value) {
     int* newStack = new int[capacity * 2];
     for (int i = 0; i < capacity; i++) {
       newStack[i] = theStack[i]; 
-      int* stackToDelete = theStack;
-      theStack = newStack;
-      delete[] stackToDelete;
-      capacity *= 2;
     }
+    int* stackToDelete = theStack;
+    theStack = newStack;
+    delete[] stackToDelete;
+    capacity *= 2;   
   }
   theStack[top] = value;
   top++;
